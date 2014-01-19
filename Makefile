@@ -84,6 +84,20 @@ deploy: directories clean zend submodules
 
 install: directories libraries
 
+install-composer: directories
+# Remove libraries that were manually installed to ensure
+# that the version from Composer is used.
+	rm -rf libraries/Erfurt
+	rm -rf libraries/RDFauthor
+	rm -rf libraries/Zend
+# Remove existing Composer files to guarantee a clean install.
+	rm -rf composer.phar
+	rm -rf vendor
+# Download the latest Composer version.
+	php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
+# Install dependencies.
+	php composer.phar install
+
 vagrant: directories clean submodules-developer
 	rm -rf libraries/Zend # vagrant has own zend
 	rm -f Vagrantfile
