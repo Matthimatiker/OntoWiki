@@ -37,3 +37,7 @@ build/
 # vagrant stuff
 Vagrantfile
 .vagrant
+
+# Composer
+/composer.phar
+/vendor/
