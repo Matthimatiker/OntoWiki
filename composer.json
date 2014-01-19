@@ -1,0 +1,30 @@
+{
+    "name": "matthimatiker/ontowiki",
+    "description": "Semantic data wiki as well as Linked Data publishing engine",
+    "keywords": ["semantic", "wiki", "rdf", "sparql", "endpoint"],
+    "homepage": "http://ontowiki.net/",
+    "minimum-stability": "stable",
+    "include-path": [
+        "library"
+    ],
+    "autoload": {
+        "psr-0": {
+            "Erfurt_": "library"
+        }
+    },
+    "require": {
+        "zendframework/zendframework1": ">=1.11.5",
+        "matthimatiker/erfurt": "dev-develop"
+    },
+    "suggest": {
+    },
+    "config": {
+        "use-include-path": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Matthimatiker/Erfurt"
+        }
+    ]
+}
