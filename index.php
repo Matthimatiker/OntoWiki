@@ -95,6 +95,11 @@ $includePath .= get_include_path() . PATH_SEPARATOR;
 // set the include path
 set_include_path($includePath);
 
+$composerClassLoader = ONTOWIKI_ROOT . '/vendor/autoload.php';
+if (file_exists($composerClassLoader)) {
+    require($composerClassLoader);
+}
+
 // use default timezone from php.ini or let PHP guess it
 date_default_timezone_set(@date_default_timezone_get());
 
@@ -160,7 +165,9 @@ try {
 /* check/include Erfurt_App */
 try {
     // use include, so we can catch it with the error handler
-    require_once 'Erfurt/App.php';
+    if (!class_exists('Erfurt_App')) {
+        require_once 'Erfurt/App.php';
+    }
 } catch (Exception $e) {
     header('HTTP/1.1 500 Internal Server Error');
     echo 'Fatal Error: Could not load the Erfurt Framework classes.<br />' . PHP_EOL
