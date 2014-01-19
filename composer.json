@@ -14,17 +14,38 @@
     },
     "require": {
         "zendframework/zendframework1": ">=1.11.5",
-        "matthimatiker/erfurt": "dev-develop"
+        "matthimatiker/erfurt": "dev-develop",
+        "aksw/rdfauthor": "*"
     },
     "suggest": {
     },
     "config": {
         "use-include-path": true
     },
+    "extra": {
+        "installation-paths": {
+            "aksw/rdfauthor": "libraries/RDFauthor"
+        }
+    },
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/Matthimatiker/Erfurt"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "aksw/rdfauthor",
+                "type": "marshaller-asset",
+                "version": "0.9.6",
+                "dist": {
+                    "url": "https://github.com/AKSW/RDFauthor/archive/v0.9.6.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "matthimatiker/marshaller": "*"
+                }
+            }
         }
     ]
 }
