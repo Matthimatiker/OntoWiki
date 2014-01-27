@@ -496,12 +496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Matthimatiker/Erfurt.git",
-                "reference": "ce952d031fb9ffd3fcc3edea005e3702997eb7c3"
+                "reference": "9a00d95da8c023386e9dc2158bbd3303b46a6248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Matthimatiker/Erfurt/zipball/ce952d031fb9ffd3fcc3edea005e3702997eb7c3",
-                "reference": "ce952d031fb9ffd3fcc3edea005e3702997eb7c3",
+                "url": "https://api.github.com/repos/Matthimatiker/Erfurt/zipball/9a00d95da8c023386e9dc2158bbd3303b46a6248",
+                "reference": "9a00d95da8c023386e9dc2158bbd3303b46a6248",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 "source": "https://github.com/Matthimatiker/Erfurt/tree/feature/13_create_oracle_adapter",
                 "issues": "https://github.com/Matthimatiker/Erfurt/issues"
             },
-            "time": "2014-01-19 12:37:34"
+            "time": "2014-01-27 16:59:44"
         },
         {
             "name": "matthimatiker/marshaller",
