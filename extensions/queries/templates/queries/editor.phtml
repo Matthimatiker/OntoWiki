@@ -44,7 +44,7 @@ if (isset($this->errorFlag) && $this->errorFlag !== false) {
     </div>
 <?php if ($this->has('error')): ?>
     <fieldset>
-        <div class="messagebox error"><?php echo $this->escape($this->error) ?></div>
+        <div class="messagebox error"><?php echo nl2br($this->escape($this->error)) ?></div>
     </fieldset>
 <?php endif; ?>
 
