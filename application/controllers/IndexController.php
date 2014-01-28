@@ -67,7 +67,7 @@ class IndexController extends OntoWiki_Controller_Base
     }
 
     /**
-     * Displays messages only without any othe content.
+     * Displays messages only without any other content.
      */
     public function messagesAction()
     {
