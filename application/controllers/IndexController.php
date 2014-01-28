@@ -15,6 +15,12 @@
  */
 class IndexController extends OntoWiki_Controller_Base
 {
+
+    /**
+     * Timeout for reading the OntoWiki RSS news feed.
+     */
+    const NEWS_FEED_TIMEOUT_IN_SECONDS = 3;
+
     /**
      * Displays the OntoWiki news feed short summary (dashboard part)
      */
@@ -127,6 +133,9 @@ class IndexController extends OntoWiki_Controller_Base
                  . '&suffix='
                  . urlencode($version->suffix);
 
+            /* @var $client Zend_Http_Client */
+            $client = Zend_Feed::getHttpClient();
+            $client->setConfig(array('timeout' => self::NEWS_FEED_TIMEOUT_IN_SECONDS));
             $owFeed = Zend_Feed::import($url);
             return $owFeed;
         } catch (Exception $e) {
