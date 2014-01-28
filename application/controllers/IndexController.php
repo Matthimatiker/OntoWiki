@@ -126,12 +126,12 @@ class IndexController extends OntoWiki_Controller_Base
         $version = $this->_config->version;
         // try reading
         try {
-            $url = 'http://blog.aksw.org/feed/?cat=5&client='
-                 . urlencode($version->label)
-                 . '&version='
-                 . urlencode($version->number)
-                 . '&suffix='
-                 . urlencode($version->suffix);
+            $url = $this->_config->news->feedUrl;
+            $url = strtr($url, array(
+                '{{version.label}}'  => urlencode($version->label),
+                '{{version.number}}' => urlencode($version->number),
+                '{{version.suffix}}' => urlencode($version->suffix)
+            ));
 
             /* @var $client Zend_Http_Client */
             $client = Zend_Feed::getHttpClient();
