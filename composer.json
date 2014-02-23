@@ -14,7 +14,7 @@
     },
     "require": {
         "zendframework/zendframework1": ">=1.11.5",
-        "matthimatiker/erfurt": "dev-feature/13_create_oracle_adapter",
+        "matthimatiker/erfurt": "dev-develop",
         "aksw/rdfauthor": "*"
     },
     "suggest": {
