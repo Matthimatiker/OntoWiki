@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "de3114fadf322fba772e9594cef73b51",
+    "hash": "fd2781a39d1aab735d506d9659dff5de",
     "packages": [
         {
             "name": "aksw/rdfauthor",
@@ -584,16 +584,16 @@
         },
         {
             "name": "matthimatiker/erfurt",
-            "version": "dev-feature/28_stardog_adapter",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Matthimatiker/Erfurt.git",
-                "reference": "c52b9779491ee6b4d6b27c5db0dde6db93560246"
+                "reference": "8d9c32c71ee40d26c7f6848a7aac879f5899108d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Matthimatiker/Erfurt/zipball/c52b9779491ee6b4d6b27c5db0dde6db93560246",
-                "reference": "c52b9779491ee6b4d6b27c5db0dde6db93560246",
+                "url": "https://api.github.com/repos/Matthimatiker/Erfurt/zipball/8d9c32c71ee40d26c7f6848a7aac879f5899108d",
+                "reference": "8d9c32c71ee40d26c7f6848a7aac879f5899108d",
                 "shasum": ""
             },
             "require": {
@@ -628,10 +628,10 @@
                 "sparql"
             ],
             "support": {
-                "source": "https://github.com/Matthimatiker/Erfurt/tree/feature/28_stardog_adapter",
+                "source": "https://github.com/Matthimatiker/Erfurt/tree/develop",
                 "issues": "https://github.com/Matthimatiker/Erfurt/issues"
             },
-            "time": "2014-03-10 19:09:53"
+            "time": "2014-03-11 12:14:54"
         },
         {
             "name": "matthimatiker/marshaller",
