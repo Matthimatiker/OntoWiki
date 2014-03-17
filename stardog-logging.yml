@@ -1,0 +1,6 @@
+parameters:
+    stardog.slow_query.threshold_in_ms: 0
+
+services:
+    stardog.sparql_connector:
+        alias: stardog.sparql_connector.logging
