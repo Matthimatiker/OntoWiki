@@ -15,7 +15,8 @@
     "require": {
         "zendframework/zendframework1": ">=1.11.5",
         "matthimatiker/erfurt": "dev-develop",
-        "aksw/rdfauthor": "*"
+        "aksw/rdfauthor": "*",
+        "everyman/neo4jphp": "dev-master"
     },
     "suggest": {
     },
