@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fd2781a39d1aab735d506d9659dff5de",
+    "hash": "66806eea397eb6b8bf5b70c41c5c9dfe",
     "packages": [
         {
             "name": "aksw/rdfauthor",
@@ -491,6 +491,55 @@
             "time": "2013-01-12 18:59:04"
         },
         {
+            "name": "everyman/neo4jphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jadell/neo4jphp.git",
+                "reference": "6ca33b202b403c4f564f6a2f3bacc9482597b203"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jadell/neo4jphp/zipball/6ca33b202b403c4f564f6a2f3bacc9482597b203",
+                "reference": "6ca33b202b403c4f564f6a2f3bacc9482597b203",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phing/phing": "2.6.*",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Everyman\\Neo4j": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Adell",
+                    "email": "josh.adell@gmail.com",
+                    "homepage": "http://joshadell.com"
+                }
+            ],
+            "description": "Wrapper for the Neo4j graph database REST interface",
+            "homepage": "http://github.com/jadell/neo4jphp/wiki",
+            "keywords": [
+                "database",
+                "graph",
+                "neo4j"
+            ],
+            "time": "2014-03-13 03:35:01"
+        },
+        {
             "name": "guzzle/guzzle",
             "version": "v3.7.4",
             "source": {
@@ -588,16 +637,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Matthimatiker/Erfurt.git",
-                "reference": "8d9c32c71ee40d26c7f6848a7aac879f5899108d"
+                "reference": "14819b1b1b051b120447ea265defb3b9917752f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Matthimatiker/Erfurt/zipball/8d9c32c71ee40d26c7f6848a7aac879f5899108d",
-                "reference": "8d9c32c71ee40d26c7f6848a7aac879f5899108d",
+                "url": "https://api.github.com/repos/Matthimatiker/Erfurt/zipball/14819b1b1b051b120447ea265defb3b9917752f5",
+                "reference": "14819b1b1b051b120447ea265defb3b9917752f5",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "~2.4.1",
+                "everyman/neo4jphp": "dev-master",
                 "guzzle/guzzle": "~3.7.0",
                 "soundintheory/php-sql-parser": "~1.0.0",
                 "symfony/config": "~2.3.0",
@@ -631,7 +681,7 @@
                 "source": "https://github.com/Matthimatiker/Erfurt/tree/develop",
                 "issues": "https://github.com/Matthimatiker/Erfurt/issues"
             },
-            "time": "2014-03-11 12:14:54"
+            "time": "2014-03-17 17:41:07"
         },
         {
             "name": "matthimatiker/marshaller",
@@ -1001,7 +1051,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "matthimatiker/erfurt": 20
+        "matthimatiker/erfurt": 20,
+        "everyman/neo4jphp": 20
     },
     "platform": [
 
