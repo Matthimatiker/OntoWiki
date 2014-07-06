@@ -15,8 +15,7 @@
     "require": {
         "aksw/erfurt": "dev-feature/sync_with_aksw",
         "zendframework/zendframework1": ">=1.11.5",
-        "aksw/rdfauthor": "*",
-        "everyman/neo4jphp": "dev-master"
+        "aksw/rdfauthor": "*"
     },
     "suggest": {
     },
