@@ -1,5 +1,5 @@
 {
-    "name": "matthimatiker/ontowiki",
+    "name": "aksw/ontowiki",
     "description": "Semantic data wiki as well as Linked Data publishing engine",
     "keywords": ["semantic", "wiki", "rdf", "sparql", "endpoint"],
     "homepage": "http://ontowiki.net/",
